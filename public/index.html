@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <section class="container" id="tableSection" class="section">
+    <h1>User table</h1>
+    <table class="table table-hover" style="cursor: pointer;" background-colour=#000>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+  </section>
+
+  <section class="container" id="buttonSection" class="section">
+    <h1>Create user</h1>
+    <div>
+      <span>Username</span>
+      <input class="w-25 form-control form-control-lg mb-2" type="text" id="userNameField" placeholder="Name">
+
+      <span>Email</span>
+      <input class="w-25 form-control form-control-lg mb-2" type="text" id="userEmailField" class="form-control" placeholder="Email">
+      
+      <button class="btn btn-success btn-lg" id="createUserButton" type="button" class="btn btn-primary">Create user</button>
+    </div>
+    <div>
+      <span id="createUserErrorMessage" style="color: red; display:none"></span>
+    </div>
+  </section>
+
+  <section class="container" id="editSection" style="display: none;">
+    <br></br>
+    <span id="deleteUserMessage" style="color: red; display:none"></span>
+    <br></br>
+    <button class="btn btn-danger btn-lg" id="deleteUser">Delete</button>
+    <button class="btn btn-primary btn-lg" id="cancelButton">Cancel</button>
+  </section>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
